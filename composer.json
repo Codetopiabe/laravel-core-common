@@ -16,12 +16,10 @@
         }
     ],
     "require": {
-        "dyrynda/laravel-efficient-uuid": "^4.0",
-        "dyrynda/laravel-model-uuid": "^6.1",
-        "laravel/framework": "^7.0"
+        "dyrynda/laravel-model-uuid": "^6.1"
     },
     "require-dev": {
-
+        "laravel/framework": "^7.0"
     },
     "autoload": {
         "psr-4": {
