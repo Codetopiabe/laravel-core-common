@@ -42,8 +42,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "TheComet\\Common\\CommonServiceProvider",
-                "Dyrynda\\Database\\LaravelEfficientUuidServiceProvider"
+                "TheComet\\Common\\CommonServiceProvider"
             ]
         }
     }
