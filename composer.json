@@ -1,0 +1,52 @@
+{
+    "name": "thecomet/laravel-core-common",
+    "description": "Laravel Core Common",
+    "keywords": [
+        "thecomet",
+        "core-common"
+    ],
+    "homepage": "https://github.com/thecomet/laravel-core-common",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Frederick Willems",
+            "email": "fre.willems@thecomet.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "dyrynda/laravel-efficient-uuid": "^4.0",
+        "dyrynda/laravel-model-uuid": "^6.1",
+        "laravel/framework": "^7.0"
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "TheComet\\Common\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TheComet\\Common\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TheComet\\Common\\CommonServiceProvider",
+                "Dyrynda\\Database\\LaravelEfficientUuidServiceProvider"
+            ]
+        }
+    }
+}

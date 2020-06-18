@@ -1,0 +1,5 @@
+{
+    "preset": "tighten",
+    "disabled": ["TrailingCommasOnArrays", "SpaceAfterSoleNotOperator"],
+    "exclude": ["tests/", "vendor/"]
+}
