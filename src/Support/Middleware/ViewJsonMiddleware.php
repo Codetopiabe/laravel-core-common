@@ -33,7 +33,7 @@ class ViewJsonMiddleware
 
     private function shouldConvert(Request $request, $response): bool
     {
-        if ($response instanceof JsonResponse) {
+        if ($response instanceof JsonResponse || $request->wantsJson()) {
             return false;
         }
 
@@ -41,7 +41,7 @@ class ViewJsonMiddleware
             return false;
         }
 
-        if ($response->isSuccessful() && !method_exists($response->getOriginalContent(), 'getData')) {
+        if ($response->isSuccessful() && !is_array($response->getOriginalContent()) && !method_exists($response->getOriginalContent(), 'getData')) {
             return false;
         }
 
